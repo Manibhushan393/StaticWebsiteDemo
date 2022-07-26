@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trips Mockup Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+<!-- navigation bar -->
+<nav class="navbar navbar-expand-sm ">
+  <div class="container">
+    <a class="navbar-brand" href="javascript:void(0)">
+      <img  width ="40px" src="https://cdn-icons.flaticon.com/png/512/2403/premium/2403757.png?token=exp=1658641870~hmac=79d4a02a8b89d2e13a22815725507d6b" alt="Avatar Logo"> 
+    </a>
+    <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)"></a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <button class="btn me-2 btn-white btn-outline-light" type="button">Login</button>
+        <button class="btn  btn-white btn-outline-light" type="button">Sign up</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Input Forms Container View -->
+    <div class="container mt-3 shadow bg-warning"  >
+        <div class="row " >
+   
+        <div class="col-lg-6" >
+          <div class="row">
+            <img class="img-fluid px-0 mx-0"alt="Truck image" src="truck_image.png" >
+          </div>
+        </div>
+
+        <!-- Right side forms view  -->
+        <div class="col-lg-6 bg-white border border-white border-2">
+            <div class="row row-1 cols-2 justify-content-center" >
+                    <div class="col me-1 justify-content-center" id= "loadselement">
+
+                      <div class="d-flex px-auto text-dark justify-content-center" >
+                        <div class="p-1">
+                          <img  width ="30px" src="https://cdn-icons-png.flaticon.com/512/726/726546.png" alt="Avatar Logo" > 
+                        </div>
+                          <div class="p-2 justify-content-center">
+                            <b> Loads </b>
+                           </div>
+                      </div>
+ 
+                    </div>
+    
+                    <div class="col ms-1 justify-content-center" id="tripselement" >
+                      <div class="d-flex px-auto text-dark justify-content-center" >
+                        <div class="p-1">
+                          <img  width ="40px" src="https://cdn-icons-png.flaticon.com/512/833/833013.png" alt="Avatar Logo" > 
+                        </div>
+                          <div class="p-2 justify-content-center">
+                            <b> Trips </b>
+                           </div>
+                      </div>
+                    </div>
+                    
+              </div>
+            <div id="loadTitle" >
+  Where do you want to send your <b> Load?</b>
+             </div>
+
+<!-- here took input-group list for showing Text Fields -->
+              <form class="my-2">
+               
+                <div class="input-group px-3 py-2">
+                  <span class="input-group-text">
+                    <img width="20px" height="20px" src="https://cdn-icons.flaticon.com/png/512/880/premium/880608.png?token=exp=1658549778~hmac=0acb7045abd0ed0bf3069ec485721e11">
+                    
+                  </span>
+                  <input type="text" class="form-control" placeholder="From">
+                </div>
+              
+                <div class="input-group px-3 py-2">
+                    <span class="input-group-text">
+                      <img width="20px" height="20px" src="https://cdn-icons-png.flaticon.com/512/142/142685.png">
+                    </span>
+                    <input type="text" class="form-control" placeholder="To">
+                  </div>
+
+                  <div class="input-group px-3 py-4">
+                    <span class="input-group-text">
+                      <img width="20px" height="20px" src="https://cdn-icons-png.flaticon.com/512/747/747310.png">
+                    </span>
+                    <input type="date" class="form-control" placeholder="Date of journey">
+                    
+                      <button class="btn btn-showtrips" type="button">Show Trips</button>
+                  </div>
+
+              </form>
+            
+        </div>
+        <!-- Right side forms view  -->
+        </div>
+
+    </div>
+<!-- Input Forms Container View -->
+
+<!-- how it works container -->
+<div class="container mt-5">
+<div class="row row-1 cols-2">
+<div class="col-lg-2 bg-dark justify-content-center">
+  <ul class="list-group list-group-flush align-items-center">
+    <li class="list-group-item bg-dark align-items-center">
+      <div class="row justify-content-center">
+<div class="loadsDataTitles">
+  current Loads
+   </div>
+   <div class="loadsDataTitles">
+    <b> 1590 </b>
+     </div>
+    </div>
+    </li>
+    <li class="list-group-item bg-dark">
+      <div class="row justify-content-center">
+        <div class="loadsDataTitles">
+          current Loads
+           </div>
+           <div class="loadsDataTitles">
+            <b> 1590 </b>
+             </div>
+            </div>
+    </li>
+    <li class="list-group-item bg-dark">
+      <div class="row justify-content-center">
+        <div class="loadsDataTitles">
+          current Loads
+           </div>
+           <div class="loadsDataTitles">
+            <b> 1590 </b>
+             </div>
+            </div>
+    </li>
+    <li class="list-group-item bg-dark">
+      <div class="row justify-content-center">
+        <div class="loadsDataTitles">
+          current Loads
+           </div>
+           <div class="loadsDataTitles">
+            <b>1590</b>
+             </div>
+            </div>
+    </li>
+  </ul>
+
+</div>
+
+<div class="col-lg-10  my-auto  justify-content-center">
+<div class="row rows-2 cols-2  justify-content-center">
+
+<div class="col-lg-6">
+  <div class="d-flex p-3 text-dark" >
+    <div class="p-2 ">
+      <img  width ="60px" src="https://cdn-icons.flaticon.com/png/512/869/premium/869161.png?token=exp=1658632070~hmac=78e11451db14d48b0621a821dc33decb" alt="Avatar Logo" > 
+    </div>
+    <div class="d-flex flex-column">
+      <div class="pb-2">
+        <b> Where you are going? </b>
+       </div>
+       <div>
+        Loads and trips will help to find your next
+       </div>
+    </div>
+  
+  </div>
+</div>
+<div class="col-lg-6 ">
+  <div class="d-flex p-3 text-dark" >
+    <div class="p-2">
+      <img  width ="60px" src="https://as2.ftcdn.net/v2/jpg/01/14/35/51/1000_F_114355194_vvF40Q88AjiQpbXvJunwyCpEveVde1wQ.jpg" alt="Avatar Logo"> 
+    </div>
+    <div class="d-flex flex-column">
+      <div class="pb-2">
+        <b> Where you are going? </b>
+       </div>
+       <div>
+        Loads and trips will help to find your next
+       </div>
+    </div>
+  
+  </div>
+</div>
+<div class="col-lg-6">
+  <div class="d-flex p-3 text-dark" >
+    <div class="p-2 ">
+      <img  width ="60px" src="https://cdn-icons.flaticon.com/png/512/1011/premium/1011806.png?token=exp=1658632473~hmac=27c76bfe3b575c89cb9a2efca0082a7c" alt="Avatar Logo" > 
+    </div>
+    <div class="d-flex flex-column">
+      <div class="pb-2">
+        <b> Where you are going? </b>
+       </div>
+       <div>
+        Loads and trips will help to find your next
+       </div>
+    </div>
+  
+  </div>
+</div>
+<div class="col-lg-6">
+  <div class="d-flex p-3 text-dark" >
+    <div class="p-2 ">
+      <img  width ="60px" src="https://cdn-icons.flaticon.com/png/512/4650/premium/4650635.png?token=exp=1658632718~hmac=7af979b62c60b76490e502f779d5ec2b" alt="Avatar Logo"> 
+    </div>
+    <div class="d-flex flex-column">
+      <div class="pb-2">
+        <b> Where you are going? </b>
+       </div>
+       <div>
+        Loads and trips will help to find your next
+       </div>
+    </div>
+  
+  </div>
+</div>
+  </div>
+</div>
+</div>
+
+</div>
+<!-- how it works container -->
+
+<!-- Fetures added Titles and description -->
+<div class="container mt-5">
+<div class="row mx-5 justify-content-center">
+  <div class="featureAdded">
+   <b>Features added</b> 
+  </div>
+  <div class="featureAdded">
+    Loads and trips will help you to find your Next 
+  </div>
+  
+  </div>
+</div>
+<!-- Fetures added Titles and description -->
+
+<!-- Media play Titles and description -->
+<div class="container m-5 shadow bg-white">
+<div class="row">
+  <div class="col-lg-6" >
+    <div class="row">
+      <img class="img-fluid px-0 mx-0"alt="Truck image" src="truck_image.png" >
+    </div>
+  </div>
+
+  <div class="col-lg-6 bg-info" >
+    <div class="row">
+      
+    </div>
+  </div>
+
+</div>
+</div>
+<!-- Media play Titles and description -->
+
+<!-- cards container -->
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="card col-lg-3 p-5 m-2">
+      <img class="card-img-top" src="https://cdn-icons.flaticon.com/png/512/819/premium/819814.png?token=exp=1658572028~hmac=5e4e2919692f2e5ff49ecd7fa1acb176" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">John Doe</h4>
+        <p class="card-text">Some example text.</p>
+      </div>
+    </div>
+    <div class="card col-lg-3 p-5 m-2">
+      <img class="card-img-top" src="https://cdn-icons.flaticon.com/png/512/819/premium/819814.png?token=exp=1658572028~hmac=5e4e2919692f2e5ff49ecd7fa1acb176" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">John Doe</h4>
+        <p class="card-text">Some example text.</p>
+      </div>
+      </div>
+      <div class="card col-lg-3 p-5 m-2">
+        <img class="card-img-top" src="https://cdn-icons.flaticon.com/png/512/819/premium/819814.png?token=exp=1658572028~hmac=5e4e2919692f2e5ff49ecd7fa1acb176" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text.</p>
+        </div>
+      </div>
+  </div>
+</div>
+<!-- cards container -->
+
+<section class="">
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center text-md-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+
+         <!--Grid column-->
+         <div class="col-lg-2 col-6 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-2 col-6 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-2 col-6 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-2 col-6 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Links</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Footer Content</h5>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+            aliquam voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
+        </div>
+        <!--Grid column-->
+
+       
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" >MDBootstrap.com</a>
+      <!-- href="https://mdbootstrap.com/" -->
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</section>
+</body>
+</html>
